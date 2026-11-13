@@ -297,7 +297,10 @@ class FileSystem:
         print(f"!!! DISCO FÍSICO CORROMPIDO: O bloco de dados de {path} foi alterado por fora do SO !!!")
 
     def tree(self, node=None, prefix=""):
-        if node is None: node, print("\n[ÁRVORE DE DIRETÓRIOS]") = self.root, None
+        if node is None: 
+            node = self.root
+            print("\n[ÁRVORE DE DIRETÓRIOS]")
+            
         items = list(node.children.values())
         for i, child in enumerate(items):
             is_last = (i == len(items) - 1)
