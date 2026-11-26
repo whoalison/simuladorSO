@@ -2,7 +2,7 @@ import streamlit as st
 import io
 import shlex
 from contextlib import redirect_stdout
-from simuladorseg import OperatingSystem, get_arg
+from simuladorgp import OperatingSystem, get_arg
 
 st.set_page_config(page_title="Simulador de SO", page_icon="💻", layout="wide")
 st.title("Simulador de Sistema Operacional")
